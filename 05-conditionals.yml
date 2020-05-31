@@ -4,8 +4,11 @@
     - name: message on centos
       debug:
         msg: hello from centos
-      when: ansible_distribution == 'Centos'
+      when: ansible_distribution == "Cento"
+
+
+
     - name: message on ubuntu
       debug:
           msg: hello from ubuntu
-      when: ansible_distribution == 'Debain'
+      when: ansible_distribution == "Debain"
