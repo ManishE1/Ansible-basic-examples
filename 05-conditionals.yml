@@ -1,0 +1,11 @@
+- name: demo on conditionals
+  hosts: all
+  tasks:
+    - name: message on centos
+      debug:
+        msg: hello from centos
+      when: ansible_distribution == 'centos'
+    - name: message on ubuntu
+      debug:
+          msg: hello from ubuntu
+      when: ansible_distribution == 'debain'
