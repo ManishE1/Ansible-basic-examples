@@ -1,0 +1,11 @@
+- name: PLAY1
+  hosts: all
+  tasks:
+    - name: Check Ping from Play1
+      ping:
+
+- name: PLAY2
+  hosts: all
+  tasks:
+    - name: Check Ping from Play2
+      ping:
