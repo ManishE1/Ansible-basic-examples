@@ -1,0 +1,11 @@
+- name: Demo on loop
+  hosts: all
+  tasks:
+    - name : loop demo
+      debug:
+        msg: "{{item}}"
+      loop:
+        - a
+        - b
+        - c
+        - d
