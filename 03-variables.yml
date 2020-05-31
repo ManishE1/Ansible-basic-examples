@@ -6,7 +6,7 @@
     - name: print variable
       debug:
         msg:  "{{URL}}"
-  task:
+  tasks:
     - name: print variable from task
       debug:
         msg: URL = {{URL}}
