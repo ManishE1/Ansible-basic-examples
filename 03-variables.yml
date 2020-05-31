@@ -26,5 +26,12 @@
     - name: print variable
       debug:
         msg: "{{out.stdout}}"
+- name: Demo on printing facts
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: Print FQDN fact
+      debug:
+        msg: "{{ansible_fqdn}}"
 
 
