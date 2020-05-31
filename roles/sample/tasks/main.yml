@@ -1,0 +1,3 @@
+- name: print hello from role
+  debug:
+    msg: hello guru
