@@ -4,7 +4,7 @@
     - name: message on centos
       debug:
         msg: hello from centos
-      when: ansible_distribution == "Cento"
+      when: ansible_distribution == "CentOS"
 
 
 
