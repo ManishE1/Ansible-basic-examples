@@ -20,8 +20,8 @@
   hosts: all
   tasks:
     - name: run uptime command
-        shell: uptime
-        register: out
+      shell: uptime
+      register: out
 
     - name: print variable
       debug:
