@@ -2,6 +2,8 @@
   hosts: all
   vars:
     URL: manish.google.com
+  vars_files:
+    - vars.yml
   tasks:
     - name: print variable
       debug:
