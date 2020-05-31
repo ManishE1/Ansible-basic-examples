@@ -13,6 +13,6 @@
         msg: URL = {{URL}}
       vars:
         URL: tak.google.com
-    -name: print varaibale from inventory
-      debug:
-        msg: URL = {{URL}} URL1 = {{URL1}}
+    - name: print varaibale from inventory
+       debug:
+         msg: URL = {{URL}} URL1 = {{URL1}}
