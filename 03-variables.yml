@@ -25,6 +25,6 @@
 
     - name: print variable
       debug:
-        msg: "{{out}}"
+        msg: "{{out.stdout}}"
 
 
