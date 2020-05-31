@@ -1,0 +1,8 @@
+- name: setup a privilige escation
+  hosts: all
+  become: yes
+  tasks:
+    - name: install nginx
+      yum:
+        name: nginx
+        state: latest
