@@ -7,8 +7,8 @@
       debug:
         msg:  "{{URL}}"
   task:
-    -name: print variable from task
-     debug:
-       msg: URL = {{URL}}
-     vars:
-       URL: tak.google.com
+    - name: print variable from task
+      debug:
+        msg: URL = {{URL}}
+      vars:
+        URL: tak.google.com
