@@ -14,5 +14,5 @@
       vars:
         URL: tak.google.com
     - name: print Varaibales from inventory
-       debug:
-         msg: URL = {{URL}} URL1 = {{URL1}}
+        debug:
+          msg: URL = {{URL}} URL1 = {{URL1}}
