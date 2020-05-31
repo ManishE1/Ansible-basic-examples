@@ -16,5 +16,14 @@
     - name: print a varaiable from inventory
       debug:
         msg: URL == {{URL}} , URL1 = {{URL1}}
+- name: runtime variables
+  hosts: all
+  tasks:
+    - name: run uptime command
+        shell: uptime
+        register: out
+    - name: print variable
+      debug:
+        msg: "{{out}}"
 
 
