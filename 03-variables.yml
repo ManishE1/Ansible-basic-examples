@@ -1,9 +1,9 @@
 - name: Demo of variables
   hosts: all
+  vars_files:
+      - vars.yml
   vars:
     URL: manish.google.com
-  vars_files:
-    - vars.yml
   tasks:
     - name: print variable
       debug:
@@ -13,3 +13,6 @@
         msg: URL = {{URL}}
       vars:
         URL: tak.google.com
+    -name: print varaibale from inventory
+      debug:
+        msg: URL = {{URL}} URL1 = {{URL1}}
